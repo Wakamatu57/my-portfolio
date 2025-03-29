@@ -2,101 +2,105 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="min-h-screen bg-background text-foreground">
+      {/* Header */}
+      <header className="w-full py-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+        <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6">
+          <h1 className="text-4xl font-bold tracking-wider">
+            <a href="#">TARO DESIGN</a>
+          </h1>
+          <nav>
+            <ul className="flex space-x-8 text-lg">
+              <li><a href="#works" className="hover:text-gray-300 transition">WORKS</a></li>
+              <li><a href="#skill" className="hover:text-gray-300 transition">SKILL</a></li>
+              <li><a href="#contact" className="hover:text-gray-300 transition">CONTACT</a></li>
+            </ul>
+          </nav>
         </div>
+      </header>
+
+      {/* Main content */}
+      <main>
+        {/* Split section */}
+        <div className="flex flex-col md:flex-row py-24 bg-split bg-cover bg-center relative">
+          <div className="flex-1 text-center md:text-left p-6">
+            <h2 className="text-5xl font-bold leading-tight text-black mb-4">TAISHI<br />KATO</h2>
+            <p className="text-lg text-black opacity-90 mb-6">
+              ユーザーとお客様が心から満足できるサイトをお作りいたします。<br />
+              デザインとコーディングはおまかせください。<br />
+              福島県郡山市在住。猫と暮らしています。<br />
+              ２年間Web制作会社に勤務後、フリーランスとして独立しました。
+            </p>
+          </div>
+          <div className="flex-1 bg-cover bg-center rounded-lg shadow-xl" style={{ backgroundImage: 'url("/img/mv.jpg")' }}></div>
+        </div>
+
+        {/* Works section */}
+        <section id="works" className="py-20 bg-gray-100">
+          <div className="max-w-screen-xl mx-auto text-center">
+            <h2 className="text-4xl font-semibold mb-12">WORKS</h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+              {/* Work Item */}
+              {["work1", "work2", "work3"].map((work, index) => (
+                <div key={index} className="group shadow-lg rounded-lg overflow-hidden transform transition-all hover:scale-105">
+                  <Image
+                    className="w-full h-60 object-cover"
+                    src={`/img/works-dummy-thumb.jpg`}
+                    alt={`Work ${index + 1}`}
+                    width={600}
+                    height={400}
+                  />
+                  <div className="p-6 bg-white">
+                    <h3 className="text-xl font-semibold mb-2">作品名が入る</h3>
+                    <p className="text-gray-500">Design / Coding(Responsive)</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Skills section */}
+        <section id="skill" className="py-20 bg-white">
+          <div className="max-w-screen-xl mx-auto text-center">
+            <h2 className="text-4xl font-semibold mb-12">SKILL</h2>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-12">
+              {["HTML5", "CSS3", "JavaScript", "WordPress", "Photoshop", "Illustrator"].map((skill, index) => (
+                <div key={index} className="text-center">
+                  <Image
+                    className="mx-auto mb-4"
+                    src={`/img/icon_skill.png`}
+                    alt={skill}
+                    width={100}
+                    height={100}
+                  />
+                  <h3 className="text-xl font-semibold">{skill}</h3>
+                  <p className="text-gray-500">説明が入ります。スキルについて詳しく記載します。</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Contact section */}
+        <section id="contact" className="py-20 bg-gray-100">
+          <div className="max-w-screen-xl mx-auto text-center">
+            <h2 className="text-4xl font-semibold mb-6">CONTACT</h2>
+            <p className="text-lg text-gray-700 mb-8">
+              お問い合わせは、<br className="block md:hidden" />SNSかメールにてお願いいたします。
+            </p>
+            <div className="flex justify-center space-x-8">
+              <a href="https://twitter.com" target="_blank" className="text-blue-500 hover:text-blue-700 transition">Twitter</a>
+              <a href="https://instagram.com" target="_blank" className="text-pink-500 hover:text-pink-700 transition">Instagram</a>
+              <span className="text-gray-700">xxxxxx@gmail.com</span>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+
+      {/* Footer */}
+      <footer className="py-6 bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center">
+        <div>&copy; 2025 TARO YAMADA</div>
       </footer>
     </div>
   );
