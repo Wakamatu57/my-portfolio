@@ -52,7 +52,7 @@ const Skills = () => {
         'オブジェクト指向プログラミング（OOP）を学びながら、Java の基本的な構文や機能を習得',
         '2023年5月に Java Silver 認定資格を取得し、Java の基礎的な知識とスキルを証明',
       ],
-      imageUrl: 'Java.png',
+      imageUrl: 'java.png',
     },
   ];
   return (
