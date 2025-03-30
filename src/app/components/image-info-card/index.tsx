@@ -13,7 +13,7 @@ const ImageInfoCard = ({ imageInfo }: { imageInfo: ImageInfo }) => {
       />
       <h3 className="text-xl font-semibold">{imageInfo.name}</h3>
       <p className="text-gray-500">{imageInfo.title}</p>
-      {imageInfo.details && (
+      {imageInfo.details && imageInfo.details.length > 0 && (
         <ul className="mt-2 text-gray-600 text-sm text-left inline-block">
           {imageInfo.details.map((detail, i) => (
             <li key={i} className="flex items-start">

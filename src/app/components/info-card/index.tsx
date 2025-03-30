@@ -4,7 +4,7 @@ const InfoCard = ({ cardInfo }: { cardInfo: CardInfo }) => {
     <div className="text-center border p-4 rounded-lg shadow-lg">
       <h3 className="text-xl font-semibold">{cardInfo.name}</h3>
       <p className="text-gray-500">{cardInfo.title}</p>
-      {cardInfo.details && (
+      {cardInfo.details && cardInfo.details.length > 0 && (
         <ul className="mt-2 text-gray-600 text-sm text-left">
           {cardInfo.details.map((detail, i) => (
             <li key={i} className="flex items-start">
