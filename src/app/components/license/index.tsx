@@ -63,7 +63,7 @@ const Licenses = () => {
 
   return (
     <div className="max-w-screen-xl mx-auto text-center">
-      <h2 className="text-4xl font-semibold mb-12">LICENSES</h2>
+      <h2 className="text-4xl font-semibold mb-12">CERTIFICATIONS</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6 md:px-12">
         {licenses.map((license, index) => (
           <InfoCard cardInfo={license} key={index} />

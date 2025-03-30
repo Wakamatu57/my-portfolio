@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'タイトルがはいります',
-  description: '説明文がはいります',
+  title: 'WAKAMATUのポートフォリオ',
+  description: 'WAKAMATUの自己紹介、スキル、資格などを記載',
 };
 
 export default function RootLayout({
