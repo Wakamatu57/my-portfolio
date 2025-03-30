@@ -5,7 +5,7 @@ const SplitSection = () => {
     <div className="flex flex-col md:flex-row py-24 bg-split bg-cover bg-center relative">
       <div className="flex flex-1 items-center justify-center text-center md:text-left p-6">
         <div>
-          <h2 className="text-5xl font-bold leading-tight text-black mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold leading-tight text-black mb-4">
             About me
           </h2>
           <p className="text-lg text-black opacity-90 mb-6">
