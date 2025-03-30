@@ -4,6 +4,7 @@ import Header from './components/header';
 import SplitSection from './components/split';
 import Works from './components/work';
 import Skills from './components/skill';
+import Licenses from './components/license';
 
 export default function Home() {
   return (
@@ -18,8 +19,12 @@ export default function Home() {
           <Skills />
         </section>
 
+        <section id="license" className="py-28 bg-white">
+          <Licenses />
+        </section>
+
         {/* Contact section */}
-        <section id="contact" className="py-28 bg-white">
+        <section id="contact" className="py-28 bg-gray-100">
           <div className="max-w-screen-xl mx-auto text-center">
             <h2 className="text-4xl font-semibold mb-6">CONTACT</h2>
             <p className="text-lg text-gray-700 mb-8">

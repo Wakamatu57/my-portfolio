@@ -16,13 +16,13 @@ const Header = () => {
         <nav>
           <ul className="flex space-x-8 text-sm sm:text-sm md:text-lg">
             <li>
-              <Link href="#works" className="hover:text-gray-300 transition">
-                WORKS
+              <Link href="#skill" className="hover:text-gray-300 transition">
+                SKILLS
               </Link>
             </li>
             <li>
-              <Link href="#skill" className="hover:text-gray-300 transition">
-                SKILLS
+              <Link href="#license" className="hover:text-gray-300 transition">
+                LICENSES
               </Link>
             </li>
             <li>
