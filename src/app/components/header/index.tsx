@@ -2,15 +2,19 @@ import Link from 'next/link';
 
 const Header = () => {
   return (
-    <header className="w-full py-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-      <div className="max-w-screen-xl mx-auto flex justify-between items-center px-6">
-        <h1 className="text-4xl font-bold tracking-wider">
+    <header className="w-full py-8 bg-gradient-to-r from-blue-500 to-indigo-600 text-white fixed top-0 left-0 z-50">
+      {' '}
+      <div className="mx-auto flex justify-between items-center px-6">
+        {/* h1は左寄せ */}
+        <h1 className="text-2xl sm:text-3xl md:text-4xl">
           <Link href="#" className="hover:text-gray-300 transition">
             TOP
           </Link>
         </h1>
+
+        {/* navは右寄せ */}
         <nav>
-          <ul className="flex space-x-8 text-lg">
+          <ul className="flex space-x-8 text-sm sm:text-sm md:text-lg">
             <li>
               <Link href="#works" className="hover:text-gray-300 transition">
                 WORKS
@@ -18,7 +22,7 @@ const Header = () => {
             </li>
             <li>
               <Link href="#skill" className="hover:text-gray-300 transition">
-                SKILL
+                SKILLS
               </Link>
             </li>
             <li>
