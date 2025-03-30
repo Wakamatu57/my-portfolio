@@ -1,9 +1,4 @@
 import Image from 'next/image';
-type Work = {
-  name: string;
-  detail: string;
-  imageUrl: string;
-};
 const Works = () => {
   return (
     <div className="max-w-screen-xl mx-auto text-center">
