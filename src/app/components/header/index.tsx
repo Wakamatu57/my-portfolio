@@ -6,22 +6,15 @@ const Header = () => {
       {' '}
       <div className="mx-auto flex justify-between items-center px-6">
         {/* h1は左寄せ */}
-        <h1 className="text-sm sm:text-sm md:text-lg">
+        <h1 className="text-xs sm:text-sm md:text-lg">
           <Link href="#" className="hover:text-gray-300 transition">
-            {/* <Image
-              className="mx-auto mb-4"
-              src={`/img/ramen.png`}
-              alt="TOP"
-              width={30}
-              height={30}
-            /> */}
             TOP
           </Link>
         </h1>
 
         {/* navは右寄せ */}
         <nav>
-          <ul className="flex space-x-8 text-sm sm:text-sm md:text-lg">
+          <ul className="flex space-x-8 text-xs sm:text-sm md:text-lg">
             <li>
               <Link href="#skill" className="hover:text-gray-300 transition">
                 SKILLS
