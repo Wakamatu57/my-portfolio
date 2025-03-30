@@ -6,15 +6,14 @@ const SplitSection = () => {
       <div className="flex flex-1 items-center justify-center text-center md:text-left p-6">
         <div>
           <h2 className="text-5xl font-bold leading-tight text-black mb-4">
-            TAISHI KATO
+            About me
           </h2>
           <p className="text-lg text-black opacity-90 mb-6">
-            Webアプリ開発のご依頼はお任せください。
+            京都府出身のエンジニアです。
             <br />
-            フロントエンドからバックエンドまで幅広く対応いたします。
+            大学・大学院で機械工学を学び、2022年から大手メーカーでWebアプリの開発に従事しています。
             <br />
-            大手メーカーにて3年間、Webアプリの開発に従事しています。
-            <br />
+            AWS環境でのサーバ構築をはじめ、フロントエンド・バックエンドの実装まで幅広い業務を担当しています。
           </p>
         </div>
       </div>
