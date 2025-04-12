@@ -15,6 +15,20 @@ const SplitSection = () => {
             <br />
             AWS環境でのサーバ構築をはじめ、フロントエンド・バックエンドの実装まで幅広い業務を担当しています。
           </p>
+          <ul>
+            <li>
+              - GitHub:{' '}
+              <a href="https://github.com/Wakamatu57" target="_blank">
+                https://github.com/Wakamatu57
+              </a>
+            </li>
+            <li>
+              - Zenn:{' '}
+              <a href="https://zenn.dev/raamenwakamatu" target="_blank">
+                https://zenn.dev/raamenwakamatu
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
 
