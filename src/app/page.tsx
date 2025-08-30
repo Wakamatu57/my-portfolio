@@ -4,6 +4,7 @@ import Skills from './components/skill';
 import Licenses from './components/license';
 import Contact from './components/contact';
 import Footer from './components/footer';
+import Projects from './components/project';
 
 export default function Home() {
   return (
@@ -22,8 +23,12 @@ export default function Home() {
           <Licenses />
         </section>
 
+        <section id="project" className="py-28 bg-gray-100">
+          <Projects />
+        </section>
+
         {/* Contact section */}
-        <section id="contact" className="py-28 bg-gray-100">
+        <section id="contact" className="py-28 bg-white">
           <Contact />
         </section>
       </main>
