@@ -10,7 +10,12 @@ const Contact = () => {
         メールにてお願いいたします。
       </p>
       <div className="flex justify-center space-x-8">
-        <span className="text-gray-700">raamenwakamatu57@gmail.com</span>
+        <a
+          href="mailto:raamenwakamatu57@gmail.com"
+          className="text-blue-600 hover:underline"
+        >
+          raamenwakamatu57@gmail.com
+        </a>
       </div>
     </div>
   );

@@ -66,9 +66,11 @@ const Licenses = () => {
       <h2 className="text-2xl sm:text-3xl md:text-4xl  font-semibold mb-12">
         CERTIFICATIONS
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6 md:px-12">
+      <div className="flex flex-wrap justify-center items-stretch gap-12 px-6 md:px-12">
         {licenses.map((license, index) => (
-          <InfoCard cardInfo={license} key={index} />
+          <div key={index} className="flex w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-2rem)]">
+            <InfoCard cardInfo={license} />
+          </div>
         ))}
       </div>
     </div>

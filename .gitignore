@@ -42,3 +42,10 @@ next-env.d.ts
 node_modules/
 .next/
 .env
+
+# screenshots
+/*.png
+/*.jpg
+/*.jpeg
+/full-page.png
+.playwright-mcp/

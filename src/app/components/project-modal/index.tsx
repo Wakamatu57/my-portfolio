@@ -26,18 +26,20 @@ const ProjectModal = ({
         <h2 className="text-2xl font-bold mb-4">{project.name}</h2>
 
         {/* プロジェクト画像 */}
-        <div className="mb-6 space-y-4">
-          {project.imageUrls.map((url, i) => (
-            <Image
-              key={i}
-              src={`/img/${url}`}
-              alt={`${project.name} - ${i + 1}`}
-              width={600}
-              height={350}
-              className="rounded-lg mx-auto"
-            />
-          ))}
-        </div>
+        {project.imageUrls.length > 0 && (
+          <div className="mb-6 space-y-4">
+            {project.imageUrls.map((url, i) => (
+              <Image
+                key={i}
+                src={`/img/${url}`}
+                alt={`${project.name} - ${i + 1}`}
+                width={600}
+                height={350}
+                className="rounded-lg mx-auto"
+              />
+            ))}
+          </div>
+        )}
 
         <p className="mb-4 text-gray-600">{project.description}</p>
 

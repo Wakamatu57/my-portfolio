@@ -25,6 +25,18 @@ const Projects = () => {
       imageUrls: ['kaji-app.png', 'kaji-app2.png'],
       link: 'https://github.com/Wakamatu57/kaji-app',
     },
+    {
+      name: '議事録自動生成ツール',
+      description: 'Next.js × Mastra で開発した AI 議事録生成ローカルアプリ',
+      details: [
+        'Teams のトランスクリプト（.docx / .vtt）をドラッグ&ドロップでアップロード',
+        'システム名・プロジェクト名などの基本情報を入力して生成ボタンを押すだけ',
+        'AI エージェント（Mastra）が指摘・質問・要確認を自動分類してプレビュー画面を生成',
+        'プレビュー画面で担当者・期限を編集後、固定フォーマットの Excel ファイルとしてダウンロード',
+        'Next.js App Router + TypeScript + Mastra で実装（プライベートリポジトリ）',
+      ],
+      imageUrls: ['議事録生成ツール初期画面.png', '議事録生成ツールプレビュー画面.png'],
+    },
   ];
 
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
@@ -34,13 +46,14 @@ const Projects = () => {
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold mb-12">
         PROJECTS
       </h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 px-6 md:px-12">
+      <div className="flex flex-wrap justify-center gap-12 px-6 md:px-12">
         {projects.map((project, index) => (
-          <ProjectCard
-            key={index}
-            project={project}
-            onClick={() => setSelectedProject(project)}
-          />
+          <div key={index} className="w-full md:w-[calc(50%-1.5rem)] lg:w-[calc(33.333%-2rem)]">
+            <ProjectCard
+              project={project}
+              onClick={() => setSelectedProject(project)}
+            />
+          </div>
         ))}
       </div>
 

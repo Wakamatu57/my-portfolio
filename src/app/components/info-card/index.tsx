@@ -1,7 +1,7 @@
 import { CardInfo } from '@/app/types/CardInfo';
 const InfoCard = ({ cardInfo }: { cardInfo: CardInfo }) => {
   return (
-    <div className="text-center border p-4 rounded-lg shadow-lg">
+    <div className="text-center border p-4 rounded-lg shadow-lg h-full">
       <h3 className="text-xl font-semibold">{cardInfo.name}</h3>
       <p className="text-gray-500">{cardInfo.title}</p>
       {cardInfo.details && cardInfo.details.length > 0 && (
