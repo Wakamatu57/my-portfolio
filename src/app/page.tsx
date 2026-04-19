@@ -15,20 +15,20 @@ export default function Home() {
         <SplitSection />
 
         {/* Skills section */}
-        <section id="skill" className="py-16 bg-gray-100">
+        <section id="skill" className="py-16 bg-gray-100 scroll-mt-20">
           <Skills />
         </section>
 
-        <section id="license" className="py-16 bg-white">
+        <section id="license" className="py-16 bg-white scroll-mt-20">
           <Licenses />
         </section>
 
-        <section id="project" className="py-16 bg-gray-100">
+        <section id="project" className="py-16 bg-gray-100 scroll-mt-20">
           <Projects />
         </section>
 
         {/* Contact section */}
-        <section id="contact" className="py-16 bg-white">
+        <section id="contact" className="py-16 bg-white scroll-mt-20">
           <Contact />
         </section>
       </main>
