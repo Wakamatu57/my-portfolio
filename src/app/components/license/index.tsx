@@ -46,14 +46,14 @@ const Licenses = () => {
       ],
     },
     {
-      name: 'AWS Certified Solutions Architect - Associate',
+      name: 'AWS Certified Solutions Architect - Associate（SAA）',
       title: '2022年12月合格',
       details: [
         'AWSの主要サービス（IAM、VPC、EC2、ECS、S3、DynamoDB、RDSなど）の基本的な理解。',
       ],
     },
     {
-      name: 'AWS Certified Developer - Associate',
+      name: 'AWS Certified Developer - Associate（DVA）',
       title: '2026年9月合格',
       details: [
         'Lambda、API Gateway、DynamoDBなどを用いたサーバーレス開発と、CI/CD・デプロイの知識を習得。',
