@@ -53,10 +53,24 @@ const Licenses = () => {
       ],
     },
     {
+      name: 'AWS Certified Developer - Associate',
+      title: '2026年9月合格',
+      details: [
+        'Lambda、API Gateway、DynamoDBなどを用いたサーバーレス開発と、CI/CD・デプロイの知識を習得。',
+      ],
+    },
+    {
       name: 'LinuC レベル1',
       title: '2024年2月合格',
       details: [
         'Linuxの基本的なコマンドを学び、サーバの構築・運用に必要なスキルを習得。',
+      ],
+    },
+    {
+      name: 'JSTQB認定テスト技術者資格 Foundation Level',
+      title: '2026年9月合格',
+      details: [
+        'テスト技法やテストプロセスなど、ソフトウェアテストの体系的な知識を習得。',
       ],
     },
   ];
