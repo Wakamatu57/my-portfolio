@@ -2,7 +2,6 @@ import Header from './components/header';
 import SplitSection from './components/split';
 import Skills from './components/skill';
 import Licenses from './components/license';
-import Contact from './components/contact';
 import Footer from './components/footer';
 import Projects from './components/project';
 
@@ -25,11 +24,6 @@ export default function Home() {
 
         <section id="project" className="py-16 bg-gray-100 scroll-mt-20">
           <Projects />
-        </section>
-
-        {/* Contact section */}
-        <section id="contact" className="py-16 bg-white scroll-mt-20">
-          <Contact />
         </section>
       </main>
 

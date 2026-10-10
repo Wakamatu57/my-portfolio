@@ -10,7 +10,6 @@ const Header = () => {
     { href: '#skill', label: 'SKILLS' },
     { href: '#license', label: 'CERTIFICATIONS' },
     { href: '#project', label: 'PROJECTS' },
-    { href: '#contact', label: 'CONTACT' },
   ];
 
   return (
